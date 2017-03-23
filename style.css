@@ -1,0 +1,24 @@
+#clock {
+  position: relative
+}
+
+
+#clock img {
+  position: absolute;
+  /*absolute positioning pushes element to the next available space in the parent container*/
+  /*child elements of this element would also have position: absolute*/
+}
+
+#hour {
+  display: inline-block
+}
+
+#minute {
+  z-index: 2
+  /*position of #minute is absolute, hence you can set z-index*/
+}
+
+#second {
+  z-index: 3
+  /*position of #second is absolute, hence you can set z-index*/
+}
